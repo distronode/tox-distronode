@@ -2,6 +2,7 @@
 # See https://github.com/distronode/devtools/blob/main/.github/workflows/push.yml
 name: push
 "on":
+  workflow_dispatch:
   push:
     branches:
       - main
