@@ -215,7 +215,7 @@ on:
 
 jobs:
   tox-distronode:
-    uses: tox-dev/tox-distronode/.github/workflows/run.yml@main
+    uses: distronode/tox-distronode/.github/workflows/run.yml@main
 ```
 
 Sample `json`
@@ -237,7 +237,7 @@ Sample `json`
 
 Although the `tox-distronode` plugin does not have functionality specific to molecule, it can be a powerful tool to run `molecule` scenarios across a matrix of Distronode and Python versions.
 
-This can be accomplished by presenting molecule scenarios as integration tests available through `pytest` using the [pytest-distronode](https://github.com/distronode-community/pytest-distronode) plugin, which is installed when `tox-distronode` is installed.
+This can be accomplished by presenting molecule scenarios as integration tests available through `pytest` using the [pytest-distronode](https://github.com/distronode/pytest-distronode) plugin, which is installed when `tox-distronode` is installed.
 
 Assuming the following collection directory structure:
 
